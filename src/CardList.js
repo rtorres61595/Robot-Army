@@ -4,13 +4,13 @@ import Card from "./Card";
 const CardList = ({ robots }) => {
   return (
     <div>
-      {robots.map((user, id) => {
+      {robots.map((user, i) => {
         return (
           <Card
-            key={id}
-            id={robots[id].id}
-            name={robots[id].name}
-            email={robots[id].email}
+            key={i}
+            id={robots[i].id}
+            name={robots[i].name}
+            email={robots[i].email}
           />
         );
       })}
